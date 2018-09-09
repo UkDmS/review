@@ -1,5 +1,5 @@
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
-$APPLICATION->SetTitle("Отзывы");
+$APPLICATION->SetTitle("РћС‚Р·С‹РІС‹");
 ?>
 	<h1><?$APPLICATION->ShowTitle(false)?></h1>
 
@@ -122,55 +122,55 @@ function generatePassword($length = 8){
 }
 $id = generatePassword(12);
 ?>
-<p class="reviews_title">Оставить отзыв:</p>
+<p class="reviews_title">РћСЃС‚Р°РІРёС‚СЊ РѕС‚Р·С‹РІ:</p>
 <form action="" class="form-review text-about" method="post">
-    <div class="form-group"><p>Так Вы поможете пользователям определиться с выбором товара и стать нам немного лучше.</p>
-   <p>Отзыв будет опубликован после проверки модератором. Ваш e-mail не будет размещен в отзыве, он необходим для возможности ответить Вам нашими менеджерами.</p>
+    <div class="form-group"><p>РўР°Рє Р’С‹ РїРѕРјРѕР¶РµС‚Рµ РїРѕР»СЊР·РѕРІР°С‚РµР»СЏРј РѕРїСЂРµРґРµР»РёС‚СЊСЃСЏ СЃ РІС‹Р±РѕСЂРѕРј С‚РѕРІР°СЂР° Рё СЃС‚Р°С‚СЊ РЅР°Рј РЅРµРјРЅРѕРіРѕ Р»СѓС‡С€Рµ.</p>
+   <p>РћС‚Р·С‹РІ Р±СѓРґРµС‚ РѕРїСѓР±Р»РёРєРѕРІР°РЅ РїРѕСЃР»Рµ РїСЂРѕРІРµСЂРєРё РјРѕРґРµСЂР°С‚РѕСЂРѕРј. Р’Р°С€ e-mail РЅРµ Р±СѓРґРµС‚ СЂР°Р·РјРµС‰РµРЅ РІ РѕС‚Р·С‹РІРµ, РѕРЅ РЅРµРѕР±С…РѕРґРёРј РґР»СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РѕС‚РІРµС‚РёС‚СЊ Р’Р°Рј РЅР°С€РёРјРё РјРµРЅРµРґР¶РµСЂР°РјРё.</p>
     </div>
     <div id="form-body">
     <div class="form-group validate has-success">
-    	<input type="text" class="form-control" name="name_reviews" id="name_reviews" placeholder="Ваше имя*">
+    	<input type="text" class="form-control" name="name_reviews" id="name_reviews" placeholder="Р’Р°С€Рµ РёРјСЏ*">
         <div class="error-box"></div>
     </div>
     <div class="form-group validate has-error">
-    	<input type="text" class="form-control" name="email_reviews" id="email_reviews" placeholder="Ваш e-mail*">
+    	<input type="text" class="form-control" name="email_reviews" id="email_reviews" placeholder="Р’Р°С€ e-mail*">
         <div class="error-box"></div>
     </div>
     <div class="form-group">
-    	<textarea placeholder="Ваш отзыв*" class="form-control" id="comment_reviews" name="comment_reviews" cols="30"></textarea>
+    	<textarea placeholder="Р’Р°С€ РѕС‚Р·С‹РІ*" class="form-control" id="comment_reviews" name="comment_reviews" cols="30"></textarea>
         <div class="error-box"></div>
     </div>
     <div class="form-group reviews_stars_group">
-    Ваша оценка:
+    Р’Р°С€Р° РѕС†РµРЅРєР°:
     <div class="review_stars_wrap">
 	<div id="review_stars">
 	    <input id="star-4" type="radio" name="stars" data-review="5"/>
-	    <label title="Отлично" for="star-4">
+	    <label title="РћС‚Р»РёС‡РЅРѕ" for="star-4">
 	    	<i class="fas fa-star"></i>
 	    </label>
 	    <input id="star-3" type="radio" name="stars" data-review="4"/>
-	    <label title="Хорошо" for="star-3">
+	    <label title="РҐРѕСЂРѕС€Рѕ" for="star-3">
 	    	<i class="fas fa-star"></i>
 	    </label>
 	    <input id="star-2" type="radio" name="stars"  data-review="3"/>
-	    <label title="Нормально" for="star-2">
+	    <label title="РќРѕСЂРјР°Р»СЊРЅРѕ" for="star-2">
 	    	<i class="fas fa-star"></i>
 	    </label>
 	    <input id="star-1" type="radio" name="stars" data-review="2"/>
-	    <label title="Плохо" for="star-1">
+	    <label title="РџР»РѕС…Рѕ" for="star-1">
 	    	<i class="fas fa-star"></i>
 	    </label>
 	    <input id="star-0" type="radio" name="stars" data-review="1"/>
-	    <label title="Ужасно" for="star-0">
+	    <label title="РЈР¶Р°СЃРЅРѕ" for="star-0">
 	    	<i class="fas fa-star"></i>
 	    </label>
 	</div>
     </div>
     </div>
-    <div id="required_field"><span>*</span> - Поля, отмеченные звездочкой, обязательны для заполнения</div>
+    <div id="required_field"><span>*</span> - РџРѕР»СЏ, РѕС‚РјРµС‡РµРЅРЅС‹Рµ Р·РІРµР·РґРѕС‡РєРѕР№, РѕР±СЏР·Р°С‚РµР»СЊРЅС‹ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ</div>
     <input type="hidden" name="rand" class="rand" value='<? echo $id ?>'/>
     <div>
-    	<button type="submit" class="btn btn-purple" id="button_form" disabled="disabled">Опубликовать отзыв</button>
+    	<button type="submit" class="btn btn-purple" id="button_form" disabled="disabled">РћРїСѓР±Р»РёРєРѕРІР°С‚СЊ РѕС‚Р·С‹РІ</button>
     </div>
     </div>
 </form>
@@ -282,7 +282,7 @@ $(document).ready(function(){
     $('input#name_reviews, input#email_reviews, textarea#comment_reviews').unbind().blur(function(){
         var id = $(this).attr('id'),
             val = $(this).val(),
-            rv_name = /^[a-zA-Zа-яА-Я\s]+$/,
+            rv_name = /^[a-zA-ZР°-СЏРђ-РЇ\s]+$/,
             rv_email = /^([a-zA-Z0-9_.-])+@([a-zA-Z0-9_.-])+\.([a-zA-Z])+([a-zA-Z])+/;
         switch(id) {
             case 'name_reviews':
@@ -294,7 +294,7 @@ $(document).ready(function(){
                 else {
                     $(this).removeClass('not_error').addClass('error');
                     $(this).css('border','red solid 2px');
-                    $(this).next('.error-box').html('Длина имени должна составлять не менее 2 символов,<br> поле должно содержать только русские или латинские буквы');
+                    $(this).next('.error-box').html('Р”Р»РёРЅР° РёРјРµРЅРё РґРѕР»Р¶РЅР° СЃРѕСЃС‚Р°РІР»СЏС‚СЊ РЅРµ РјРµРЅРµРµ 2 СЃРёРјРІРѕР»РѕРІ,<br> РїРѕР»Рµ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ С‚РѕР»СЊРєРѕ СЂСѓСЃСЃРєРёРµ РёР»Рё Р»Р°С‚РёРЅСЃРєРёРµ Р±СѓРєРІС‹');
                 }
                 break;
 
@@ -307,7 +307,7 @@ $(document).ready(function(){
                 else {
                     $(this).removeClass('not_error').addClass('error');
                     $(this).css('border','red solid 2px');
-                    $(this).next('.error-box').html('Поле должно содержать правильный email-адрес');
+                    $(this).next('.error-box').html('РџРѕР»Рµ РґРѕР»Р¶РЅРѕ СЃРѕРґРµСЂР¶Р°С‚СЊ РїСЂР°РІРёР»СЊРЅС‹Р№ email-Р°РґСЂРµСЃ');
                 }
                 break;
 
@@ -320,7 +320,7 @@ $(document).ready(function(){
                 else {
                     $(this).removeClass('not_error').addClass('error');
                     $(this).css('border','red solid 2px');
-                    $(this).next('.error-box').html('Поле обязательно для заполнения');
+                    $(this).next('.error-box').html('РџРѕР»Рµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РґР»СЏ Р·Р°РїРѕР»РЅРµРЅРёСЏ');
                 }
                 break;
 
@@ -346,7 +346,7 @@ $(document).ready(function(){
 
                 success: function(response){
                    $("#form-body").empty();
-                    $("#form-body").html("<div class='success-review'>Ваш отзыв отправлен</div>");
+                    $("#form-body").html("<div class='success-review'>Р’Р°С€ РѕС‚Р·С‹РІ РѕС‚РїСЂР°РІР»РµРЅ</div>");
                 }
             }); // end ajax({...})
 
@@ -354,6 +354,6 @@ $(document).ready(function(){
 
 
 }); // end script
-</script>
+</script>           
 <div class="clear"></div>
 <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php")?>

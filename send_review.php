@@ -1,5 +1,5 @@
 <?
-// âìåñòî õåäåðà
+// Ð²Ð¼ÐµÑÑ‚Ð¾ Ñ…ÐµÐ´ÐµÑ€Ð°
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/prolog_before.php');
 
 //print_r($_POST);
@@ -22,9 +22,9 @@ switch($_POST['stars']){
             'MODIFIED_BY' => '1',
             'DATE_CREATE' => $arFields['DATE_CREATE'],
       );
-
+                                 
       if ($PRODUCT_ID = $el->Add($fields)) {
-         echo 'Äîáàâëåí ýëåìåíò, ID: ' . $PRODUCT_ID;
+         echo 'Ð”Ð¾Ð±Ð°Ð²Ð»ÐµÐ½ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚, ID: ' . $PRODUCT_ID;
 CIBlockElement::SetPropertyValueCode($PRODUCT_ID, "text", array("VALUE"=>array("TEXT"=>$_POST['comment'], "TYPE"=>"text")));
 CIBlockElement::SetPropertyValues($PRODUCT_ID,42, date("m.d.Y"), "date");
 CIBlockElement::SetPropertyValues($PRODUCT_ID,42, $stars, "stars");
@@ -34,6 +34,6 @@ CIBlockElement::SetPropertyValues($PRODUCT_ID,42, $_POST["mail"], "mail");
    } else {
       echo "Error[" . $PRODUCT_ID . "]: " . $el->LAST_ERROR . '<br />';
    }
-// âìåñòî ôóòåðà
+// Ð²Ð¼ÐµÑÑ‚Ð¾ Ñ„ÑƒÑ‚ÐµÑ€Ð°
 require($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/main/include/epilog_after.php');
 ?>
