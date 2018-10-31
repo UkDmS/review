@@ -22,10 +22,10 @@ switch($_POST['stars']){
             'MODIFIED_BY' => '1',
             'DATE_CREATE' => $arFields['DATE_CREATE'],
       );
-                                 
+
       if ($PRODUCT_ID = $el->Add($fields)) {
          echo 'Добавлен элемент, ID: ' . $PRODUCT_ID;
-CIBlockElement::SetPropertyValueCode($PRODUCT_ID, "text", array("VALUE"=>array("TEXT"=>$_POST['comment'], "TYPE"=>"text")));
+CIBlockElement::SetPropertyValueCode($PRODUCT_ID, "text", array("VALUE"=>array("TEXT"=>htmlspecialchars($_POST['comment']), "TYPE"=>"text")));
 CIBlockElement::SetPropertyValues($PRODUCT_ID,42, date("m.d.Y"), "date");
 CIBlockElement::SetPropertyValues($PRODUCT_ID,42, $stars, "stars");
 CIBlockElement::SetPropertyValues($PRODUCT_ID,42, 1006, "public");
